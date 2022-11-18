@@ -753,11 +753,13 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 .button-sign:hover,
 .button-sign:focus,
 .button-sign:active {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: rgba(33, 150, 243, 1);
 }
 
 .icon-sign {

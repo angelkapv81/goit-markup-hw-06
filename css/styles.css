@@ -747,7 +747,7 @@ textarea {
   line-height: calc(30 / 16);
   color: var(--hero-color);
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
+  background-color: #188ce8;
   border-radius: 4px;
   fill: var(--bg-color);
   display: flex;

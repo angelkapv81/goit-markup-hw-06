@@ -657,13 +657,20 @@ h2 {
   top: 8px;
   right: 8px;
   background-color: var(--hero-color);
-}
-.close:focus,
-.close:hover
-{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+}
+/* .close-down:focus-within,
+.close:focus-within, 
+ .close:focus-within > .close-down,
+ .close:focus-within + .close-down, 
+ .close:focus-within ~ .close-down,  */
+
+.close:hover {
   fill: var(--accent-color);
-  }
+}
 textarea {
   resize: none;
 }
@@ -709,11 +716,11 @@ textarea {
   padding: 11px 12px 11px 42px;
 }
 .mail-sign {
-display: flex;
+  display: flex;
 }
 
 .label-sign {
-font-weight: 700;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.63;
   color: var(--hero-color);
@@ -723,11 +730,11 @@ font-weight: 700;
 }
 
 .input-sign {
-width: 358px;
+  width: 358px;
   height: 50px;
   border-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
-  background-color: var(--background-color-hero) ;
+  background-color: var(--background-color-hero);
   padding-left: 16px;
 }
 .button-sign {
@@ -736,26 +743,26 @@ width: 358px;
   margin-left: 12px;
   margin-top: 114px;
   font-weight: 700;
- font-size: 16px;
- line-height: calc(30 / 16);
- color: var(--hero-color);
- letter-spacing: 0.06em;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--hero-color);
+  letter-spacing: 0.06em;
   background-color: var(--accent-color);
   border-radius: 4px;
   fill: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
-    }
-  .button-sign:hover,
-  .button-sign:focus,
-  .button-sign:active {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  } 
+}
+.button-sign:hover,
+.button-sign:focus,
+.button-sign:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 .icon-sign {
   margin-left: 10px;
-} 
+}
 .footer-sign {
   display: flex;
   flex-direction: column;
@@ -778,19 +785,28 @@ width: 358px;
   color: var(--text-color);
 }
 .checkbox {
-    display: none;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
-
-/* .checkbox:focus + .icon {
+.checkbox:focus + .icon,
+.checkbox:hover + .icon {
   border: 2px solid var(--accent-color);
+  border-color: var(--accent-color);
   border-radius: 4px;
- }  */
+}
 .checkbox:checked + .icon {
-  background-color: var(--accent-color);
   background-image: url(../images/icon-check.jpg);
   background-origin: border-box;
   border: var(--accent-color);
-  }
+}
 
 span[class="icon"] {
   margin-right: 8px;
@@ -809,7 +825,7 @@ span[class="icon"] {
 .submit {
   width: 200px;
   height: 50px;
-   background-color: #188ce8;
+  background-color: #188ce8;
   outline: none;
   font-weight: 700;
   font-size: 16px;

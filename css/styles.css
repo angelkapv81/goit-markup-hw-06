@@ -425,6 +425,8 @@ h2 {
 .card {
   outline: none;
   text-decoration: none;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .item-work {
   flex-basis: calc(100% / 3 - var(--item-work-gap));
@@ -475,6 +477,8 @@ h2 {
 }
 .work-name {
   border: 1px solid #eeeeee;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .footer {
   margin-left: auto;
@@ -501,6 +505,8 @@ h2 {
   font-size: 14px;
   line-height: 1.71;
   border: 0;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .contactfooter:hover,
 .contactfooter:focus,
@@ -662,12 +668,6 @@ h2 {
   justify-content: center;
   cursor: pointer;
 }
-/* .close-down:focus-within,
-.close:focus-within, 
- .close:focus-within > .close-down,
- .close:focus-within + .close-down, 
- .close:focus-within ~ .close-down,  */
-
 .close:hover {
   fill: var(--accent-color);
 }
@@ -706,8 +706,7 @@ textarea {
   letter-spacing: 0.01em;
   margin-bottom: 4px;
   display: flex;
-  align-items: left;
-}
+  }
 .form-input {
   height: 40px;
   width: 100%;
@@ -717,6 +716,8 @@ textarea {
 }
 .mail-sign {
   display: flex;
+  margin-left: 93px;
+  
 }
 
 .label-sign {
@@ -730,19 +731,20 @@ textarea {
 }
 
 .input-sign {
+  border: 1px solid transparent;
   width: 358px;
   height: 50px;
   border-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   background-color: var(--background-color-hero);
   padding-left: 16px;
-}
+  }
 .button-sign {
   width: 200px;
   height: 50px;
   margin-left: 12px;
   margin-top: 114px;
-  font-weight: 700;
+    font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--hero-color);
@@ -754,6 +756,9 @@ textarea {
   justify-content: center;
   align-items: center;
   border: none;
+  cursor: pointer;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .button-sign:hover,
 .button-sign:focus,
@@ -768,8 +773,8 @@ textarea {
 .footer-sign {
   display: flex;
   flex-direction: column;
-  margin-left: 93px;
-  margin-top: 72px;
+  padding-top: 72px;
+  
 }
 .form-group-agrees {
   display: flex;
@@ -838,6 +843,8 @@ span[class="icon"] {
   border: none;
   margin-top: 30px;
   padding: 0;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .submit:focus,
 .submit:hover {
@@ -851,6 +858,8 @@ textarea {
   width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);

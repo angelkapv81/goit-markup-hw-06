@@ -154,6 +154,7 @@ h2 {
 
 .footer {
   background-color: var(--background-color-hero);
+  padding: 60px 0;
 }
 .link:hover,
 .link:focus {
@@ -492,12 +493,12 @@ h2 {
 .foot-address {
   display: flex;
 }
-.cont-footer {
+/* .cont-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
+} */
 .foot-network {
-  padding-top: 72px;
+  padding-top: 12px;
 }
 .contactfooter-tel {
   display: inline-block;
@@ -706,7 +707,7 @@ textarea {
   letter-spacing: 0.01em;
   margin-bottom: 4px;
   display: flex;
-  }
+}
 .form-input {
   height: 40px;
   width: 100%;
@@ -717,17 +718,15 @@ textarea {
 .mail-sign {
   display: flex;
   margin-left: 93px;
-  
 }
 
-.label-sign {
+.label-sign-footer {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.63;
   color: var(--hero-color);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .input-sign {
@@ -737,14 +736,14 @@ textarea {
   border-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   background-color: var(--background-color-hero);
-  padding-left: 16px;
-  }
+  margin-top: 20px;
+}
 .button-sign {
   width: 200px;
   height: 50px;
   margin-left: 12px;
-  margin-top: 114px;
-    font-weight: 700;
+  margin-top: 54px;
+  font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--hero-color);
@@ -773,8 +772,7 @@ textarea {
 .footer-sign {
   display: flex;
   flex-direction: column;
-  padding-top: 72px;
-  
+  padding-top: 12px;
 }
 .form-group-agrees {
   display: flex;

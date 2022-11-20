@@ -718,6 +718,7 @@ textarea {
 .mail-sign {
   display: flex;
   margin-left: 93px;
+  /* align-items: center; */
 }
 
 .label-sign-footer {
@@ -727,8 +728,12 @@ textarea {
   color: var(--hero-color);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
-
+.footer-sign-sign {
+  display: flex;
+  justify-content: center;
+}
 .input-sign {
   border: 1px solid transparent;
   width: 358px;
@@ -736,13 +741,14 @@ textarea {
   border-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   background-color: var(--background-color-hero);
-  margin-top: 20px;
+
+  padding-left: 16px;
+  display: flex;
 }
 .button-sign {
   width: 200px;
   height: 50px;
   margin-left: 12px;
-  margin-top: 54px;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
